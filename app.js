@@ -13,18 +13,20 @@ var sketch = function(){
   });
 };
 
-$(document).ready();
+$(document).ready(function(){
+  sketch();
+});
                   
   newDiv(4);
-  sketch();
 
   $('#reset').on('click', function() {
     $('.etch').removeClass('sketch');
   });
+
   $('#resize').on('click', function() {
     $('div').remove();
       var canvas = prompt("How many squares across?");
       newDiv(canvas);
-  });
+      sketch();
+      });
   
-  sketch();
