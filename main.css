@@ -1,20 +1,47 @@
+div {
+  text-align: center;
+}
 .wrapper {
     width: 90%;
     height: 90%;
     float: left;
     clear: both;
-    margin: -4px 0;
+    overflow: hidden;
+    margin-bottom: -4px;
 }
 
 .etch {
     background: #bbb;
     display: inline-block;
-    min-width: 10px;
-    min-height: 10px;
+    width: 40px;
+    height: 40px;
     color: #bbb;
 }
 
 .sketch {
     background: #000;
     color: #000;
+}
+
+button {
+  width: 88px;
+  height: 88px;
+  border-radius: 100%;
+}
+
+#resize:hover {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  box-shadow: 3px 3px 6px #777;
+}
+
+#reset:hover {
+  background-color: #0000ff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  
+  box-shadow: 3px 3px 6px #777;
 }
